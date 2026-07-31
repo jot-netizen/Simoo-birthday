@@ -56,4 +56,16 @@ document.getElementById("countdown").innerHTML =
 "⏳ " + days + " Days " + hours + "h " + minutes + "m " + seconds + "s ❤️";
 
 },1000);
+let photoNumber = 1;
 
+setInterval(() => {
+    photoNumber++;
+
+    if (photoNumber > 50) {
+        photoNumber = 1;
+    }
+
+    document.getElementById("slide").src =
+    "photos/simoo" + photoNumber + ".jpg";
+
+}, 3000);
