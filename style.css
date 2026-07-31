@@ -81,3 +81,20 @@ button:hover {
         transform: translateY(110vh) rotate(360deg);
     }
 }
+.slideshow img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 20px;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
